@@ -16,6 +16,19 @@ from .__about__ import __version__
 
 hooks.Filters.CONFIG_DEFAULTS.add_items(
     [
+        ("MFE_DISCUSSIONS_MFE_APP",
+            {
+                "name": "frontend-app-discussions",
+                "repository": "https://github.com/openedx/frontend-app-discussions/",
+                "port": 3001,
+            }
+        )
+    ]
+)
+
+
+hooks.Filters.CONFIG_DEFAULTS.add_items(
+    [
         # Add your new settings that have default values here.
         # Each new setting is a pair: (setting_name, default_value).
         # Prefix your setting names with 'TUTORPLUGIN_'.
